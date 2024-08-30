@@ -82,7 +82,7 @@ def makedirs(path):
 def clean_tempfiles(opt,tmp_init=True):
     tmpdir = opt.temp_dir
     if os.path.isdir(tmpdir): 
-        print('Clean temp...')  
+        #print('Clean temp...')  
         shutil.rmtree(tmpdir)
     if tmp_init:
         os.makedirs(tmpdir)
